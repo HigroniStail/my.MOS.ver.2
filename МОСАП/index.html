@@ -1,0 +1,1096 @@
+
+
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Московская академия — филиал</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="SKILI.css">
+    <script src="YMNIE.js" defer></script>
+</head>
+
+<body class="page">
+    <!-- СТАРАЛСЯ ДЕЛАТЬ МАКСИМАЛЬНО ПРОСТО НО ЕСЛИ БУДЕТ НЕ ПОНЯТНО В ККОДЕ ЕСТЬ ПОДСКАЗКИ  -->
+    <!-- ФОТО УЖЕ СВЕРСТАНЫ ПРОСТО ДОБАВЬТЕ ФОТО В ПАПКУ img И УКАЖИТЕ ПУТЬ  -->
+    <!-- ================= HEADER ЭТО ШАПКА НЕ ГЛАВНАЯ СТРАНИЦА  ================= -->
+    <header class="header">
+        <div class="header__container">
+
+            <div class="logo-block">
+                <div class="header__logo">
+                    <img src="/img/logo3.png" alt="Логотип">
+                </div>
+
+                <p class="header-text">
+                    Государственная аккредитация:<br>
+                    № 3355 от 18.03.2020 г.<br>
+                    Лицензия № 2864 от 07.09.2019 бессрочная.
+                </p>
+            </div>
+
+            <div class="header-title">
+                <a href="tel:+79370881197" class="header__phone">
+                    +7 (937) 088-11-97
+                    <img class="phone-img" src="img\phone.png" alt="phone">
+                </a>
+                <a href="mailto:volgmosap@mail.ru" class="header-email">
+                    <p class="header-email-text">email: volgmosap@mail.ru</p>
+                    <img class="phone-img" src="/img/email.png" alt="email">
+                </a>
+            </div>
+            <div class="header-btn">
+                <button class="application-training">Заявка на обучение</button>
+                <button class="priemnaia-komisia" onclick="scrollToBlock()">Наши контакты</button>
+            </div>
+        </div>
+
+
+        <div class="app-modal">
+            <div class="app-modal-content">
+                <button class="app-close">✕</button>
+
+                <h2>Оставить заявку</h2>
+
+                <form class="app-form">
+                    <input type="text" placeholder="Имя" required>
+                    <input type="email" placeholder="Эл. почта" required>
+                    <input type="tel" placeholder="Телефон" required>
+
+                    <label class="app-checkbox">
+                        <input type="checkbox" required>
+                        <span>Согласен с политикой конфиденциальности</span>
+                    </label>
+
+                    <button type="submit" class="app-submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+
+
+    </header>
+
+    <!-- ================= MAIN ТУТ САЙТ НАЧИНАЕТСЯ  ================= -->
+    <main class="main">
+
+        <!-- ===== HERO ===== -->
+        <section class="hero">
+            <div class="hero__container">
+                <div class="hero__slider">
+            <img class="KArtinka active" src="img/para-v-univere.avif" alt="Слайд 1">
+            <img class="KArtinka" src="img/kartinka.webp" alt="Слайд 2">
+            <img class="KArtinka" src="img/1card.jpg" alt="Слайд 3">
+        </div>
+                <div class="hero__content">
+                    <h1 class="MOSKOVSKAIA-AKADEMIA">МОСКОВСКАЯ <br> АКАДЕМИЯ<br> ПРЕДПРИНИМАТЕЛЬСТВА</h1>
+                    <h2 class="gorod-volgograd">В ВОЛГОГРАДЕ</h2>
+                    <div class="hero-btn">
+
+                        <button class="ob-akademii-btn" onclick="scrollToInfo()">
+                            Об Академии
+                        </button>
+
+                        <button class="abityrientam-btn" onclick="scrollToAdvantages()">
+                            Абитуриентам
+                        </button>
+
+                        <button class="akreditasia-btn" onclick="scrollToLicenses()">
+                            Лицензия и аккредитация
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="map-info" id="MAP-info">
+
+            <h2 class="map-title">
+                МОСКОВСКАЯ АКАДЕМИЯ ПРЕДПРИНИМАТЕЛЬСТВА БОЛЕЕ
+                30 ЛЕТ В РОССИЙСКОМ ВЫСШЕМ ОБРАЗОВАНИИ
+
+            </h2>
+
+
+            <div class="map-slider">
+
+                <button class="map-arrow map-prev">‹</button>
+
+                <div class="map-slider-window">
+                    <div class="map-slider-track">
+
+                        <span>УДОБНАЯ СИСТЕМА ОПЛАТЫ</span>
+                        <span>ГОСУДАРСТВЕННАЯ АККРЕДИТАЦИЯ</span>
+                        <span>УСКОРЕННОЕ ОБУЧЕНИЕ</span>
+                        <span>ПОСТУПЛЕНИЕ БЕЗ ЕГЭ ПРИ НАЛИЧИИ ДИПЛОМА КОЛЛЕДЖА ИЛИ ВУЗА</span>
+                        <span>ГОСУДАРСТВЕННЫЙ ДИПЛОМ</span>
+                        <span>ПОСТУПЛЕНИЕ БЕЗ ЕГЭ ПРИ НАЛИЧИИ ДИПЛОМА НАЧАЛЬНОГО ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ,
+                            КОЛЛЕДЖА, ВУЗА ГОСУДАРСТВЕННЫЙ ДИПЛОМ</span>
+
+                    </div>
+                </div>
+
+                <button class="map-arrow map-next">›</button>
+
+            </div>
+            <div class="map-subtitle">
+
+                <p>
+                    МАП В <span class="span-map-sub">ВОЛГОГРАДЕ</span> — ЭТО ВЫСШЕЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ДЛЯ
+                    НОВОГО ПОКАЛЕНИЯ,
+                    В КОТОРОМ <span class="span-map-sub-dist">ДИСТАНЦИОННОЕ</span> ОБУЧЕНИЕ РАБОТАЕТ НА РЕЗУЛЬТАТ
+                </p>
+
+            </div>
+            <div class="map-cards">
+
+                <div class="map-card">
+                    <img src="img/1card.jpg" alt="img">
+                    <p>Только востребованные и актуальные знания</p>
+                </div>
+
+                <div class="map-card">
+                    <img src="img/card-2.webp" alt="">
+                    <p>1997 — год основания академии</p>
+                </div>
+
+                <div class="map-card">
+                    <img src="img/card-3.webp" alt="">
+                    <p>80% учебного процесса — это работа с реальными кейсами и проектами</p>
+                </div>
+
+                <div class="map-card">
+                    <img src="img/card-4.webp" alt="">
+                    <p>Входим в топ 100 лучших университетов России</p>
+                </div>
+
+                <div class="map-card">
+                    <img src="img/card-5.webp" alt="">
+                    <p>Государственный диплом</p>
+                </div>
+
+                <div class="map-card">
+                    <img src="img/card-11.webp" alt="">
+                    <p>Стажировки в топовых компаниях партнёрах</p>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="education">
+
+            <div class="education__container">
+
+                <h1 class="education-title">Уровни образования</h1>
+
+                <p class="education-subtitle">
+                    Поднимайся по лестнице знаний вместе с нами
+                </p>
+
+                <h2 class="education-accent">
+                    ПОЛУЧИ СТОЛИЧНОЕ ОБРАЗОВАНИЕ В ВОЛГОГРАДЕ!!!
+                </h2>
+
+
+                <div class="education-slider">
+
+                    <button class="slider-btn slider-prev">&#10094;</button>
+
+                    <div class="slider-track">
+
+                        <a href="#college" class="edu-card active">
+
+                            <div class="edu-card-content">
+                                <h3>Колледж</h3>
+                                <p>6 факультетов • 30 программ</p>
+                            </div>
+
+                            <div class="edu-card-image">
+                                 <img src="img/para-v-univere.avif" alt="Колледж"> 
+                            </div>
+
+                        </a>
+
+
+                        <a href="#bachelor" class="edu-card">
+
+                            <div class="edu-card-content">
+                                <h3>Бакалавриат</h3>
+                                <p>10 факультетов • 48 программ</p>
+                            </div>
+
+                            <div class="edu-card-image">
+                                 <img src="img/1card.jpg" alt="Бакалавриат"> 
+                            </div>
+
+                        </a>
+
+
+                        <a href="#master" class="edu-card">
+
+                            <div class="edu-card-content">
+                                <h3>Магистратура</h3>
+                                <p>5 факультетов • 14 программ</p>
+                            </div>
+
+                            <div class="edu-card-image">
+                                 <img src="img/shapki-card.avif" alt="Магистратура"> 
+                            </div>
+
+                        </a>
+
+                    </div>
+
+                    <button class="slider-btn slider-next">&#10095;</button>
+
+                </div>
+
+
+            </div>
+
+            </div>
+
+        </section>
+        <section class="career">
+
+            <div class="career__container">
+
+                <h2 class="career__title">
+                    Твоя будущая карьера начинается здесь
+                </h2>
+
+                <div class="career__grid">
+
+                    <!-- БАКАЛАВРИАТ -->
+
+                    <div class="career-card career-card--bachelor">
+
+                        <h3 class="career-card__title green">
+                            БАКАЛАВРИАТ
+                        </h3>
+
+                        <div class="career-card__price">
+                            Стоимость обучения
+                            <span>30 000 руб./семестр</span>
+                        </div>
+
+                        <div class="career-card__time">
+                            <h4 class="red">СРОК ОБУЧЕНИЯ</h4>
+                            <p>на базе полного среднего образования — <b>4 г. 6 мес.</b></p>
+                            <p>на базе колледжа — <b>3 г. 3 мес.</b></p>
+                        </div>
+
+                        <div class="career-card__block">
+                            <h4 class="red">Экономика</h4>
+                            <ul>
+                                <li>Управление финансами в банковской сфере</li>
+                                <li>Финансы в корпорации</li>
+                                <li>Налогообложение организаций</li>
+                                <li>Бухгалтерский учет, анализ и аудит</li>
+                                <li>Финансовые рынки и кредитные организации</li>
+                                <li>Бизнес-информатика</li>
+                            </ul>
+                        </div>
+
+                        <div class="career-card__block">
+                            <h4 class="red">IT и программирование</h4>
+                            <ul>
+                                <li>Интеллектуальные информационные системы</li>
+                                <li>Веб-разработка</li>
+                                <li>Тестирование и DevOps</li>
+                                <li>Разработка программного обеспечения (Full-stack)</li>
+                            </ul>
+                        </div>
+
+                        <div class="career-card__block">
+                            <h4 class="red">Менеджмент</h4>
+                            <ul>
+                                <li>Государственная и муниципальная служба</li>
+                                <li>Менеджмент в индустрии гостеприимства</li>
+                                <li>Управление персоналом</li>
+                                <li>Проектный менеджмент</li>
+                                <li>Логистика</li>
+                                <li>Менеджмент в спортивной индустрии</li>
+                            </ul>
+                        </div>
+
+                        <div class="career-card__block">
+                            <h4 class="red">Дизайн</h4>
+                            <ul>
+                                <li>Дизайн и современное искусство</li>
+                                <li>UX/UI-дизайн</li>
+                                <li>Дизайн упаковки</li>
+                                <li>Ландшафтный дизайн</li>
+                                <li>Геймдизайн</li>
+                            </ul>
+                        </div>
+
+                        <div class="career-card__block">
+                            <h4 class="red">Предпринимательство</h4>
+                            <ul>
+                                <li>Менеджмент предпринимательской деятельности</li>
+                            </ul>
+                        </div>
+
+                        <div class="career-card__block">
+                            <h4 class="red">Психология</h4>
+                            <ul>
+                                <li>Организационная психология</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <!-- ПРАВАЯ КОЛОНКА -->
+
+                    <div class="career-side">
+
+                        <!-- КОЛЛЕДЖ -->
+
+                        <div class="career-card">
+
+                            <h3 class="career-card__title green">
+                                КОЛЛЕДЖ
+                            </h3>
+
+                            <div class="career-card__price">
+                                Стоимость обучения
+                                <span>25 000 руб./семестр</span>
+                            </div>
+
+                            <div class="career-card__time">
+
+                                <h4 class="red">СРОК ОБУЧЕНИЯ</h4>
+
+                                <p>на базе 9 кл — <b>3 г. 10 мес.</b></p>
+                                <p>на базе 11 кл — <b>3 г. 10 мес.</b></p>
+
+                            </div>
+
+                            <ul>
+
+                                <li>Юриспруденция</li>
+                                <li>Туризм и гостеприимство</li>
+                                <li>Экономика и бухгалтерский учет</li>
+                                <li>Банковское дело</li>
+                                <li>Страховое дело</li>
+                                <li>Специалист торгового дела</li>
+                                <li>Интернет-маркетинг</li>
+                                <li>CRM-маркетолог</li>
+                                <li>Менеджер маркетплейсов</li>
+
+                            </ul>
+
+                        </div>
+
+                        <!-- МАГИСТРАТУРА -->
+
+                        <div class="career-card">
+
+                            <h3 class="career-card__title green">
+                                МАГИСТРАТУРА
+                            </h3>
+
+                            <div class="career-card__price">
+                                Стоимость обучения
+                                <span>35 000 руб./семестр</span>
+                            </div>
+
+                            <div class="career-card__time">
+
+                                <h4 class="red">СРОК ОБУЧЕНИЯ</h4>
+
+                                <p>2 года</p>
+
+                            </div>
+
+                            <ul>
+
+                                <li>Экономика</li>
+                                <li>Менеджмент</li>
+                                <li>Юриспруденция</li>
+                                <li>Психология</li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="career-popup">
+
+                <button class="career-popup__close">✕</button>
+
+                <p>
+
+                    Более подробную консультацию вы можете получить лично по адресу
+                    <b>г. Москва, ул. Примерная, 12</b>
+
+                </p>
+
+                <p>
+                    ПН-ПТ <b>9:00 – 16:00</b>
+                </p>
+
+                <p>
+                    Телефон
+                    <a href="tel:+78005553535">+7 (800) 555-35-35</a>
+                </p>
+
+                <p>
+                    <b>ПН-ПТ: 9:00 – 20:00</b>
+                </p>
+
+            </div>
+        </section>
+        <!-- ФОТО УЖЕ СВЕРСТАНЫ ПРОСТО ДОБАВЬТЕ ФОТО В ПАПКУ img И УКАЖИТЕ ПУТЬ  -->
+        <section id="licenses" class="license-section">
+
+            <h1 class="license-title">
+                Наша академия лицензирована и аккредитована
+            </h1>
+
+            <div class="license-buttons">
+
+                <button class="license-card" data-doc="wordfile/license.pdf">
+
+                    <h2>Государственная лицензия на ведение образовательной деятельности</h2>
+
+                    <p>Гарантия качества образования</p>
+
+                </button>
+
+
+                <button class="license-card" data-doc="wordfile/accreditation.pdf">
+
+                    <h2>Государственная аккредитация</h2>
+
+                    <p>Наши программы соответствуют государственным стандартам</p>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <div class="doc-modal">
+
+            <div class="doc-modal-content">
+
+                <span class="doc-close">×</span>
+
+                <iframe src="" class="doc-frame"></iframe>
+
+            </div>
+
+        </div>
+
+        <section class="about-study">
+
+            <h1 class="about-title">Расскажем больше об обучении</h1>
+
+            <div class="about-grid">
+
+                <a class="about-card">
+                    <span class="about-number">01</span>
+                    <span class="about-more">ПОДРОБНЕЕ</span>
+
+                    <div class="about-content">
+                        <h3>Видеолекции</h3>
+
+                        <p>
+                            Позволят изучать материал в удобное время, с возможностью пересматривать сложные моменты.
+                            Доступ к записям ведущих преподавателей, наглядная подача информации и интеграция с
+                            электронными
+                            учебниками повысит эффективность обучения.
+                        </p>
+                    </div>
+
+                    <!-- background-image: url("img/lecture.jpg"); -->
+
+                </a>
+
+
+                <a class="about-card">
+                    <span class="about-number">02</span>
+                    <span class="about-more">ПОДРОБНЕЕ</span>
+
+                    <div class="about-content">
+                        <h3>Домашние задания</h3>
+
+                        <p>
+                            Позволят закреплять теорию на практике и получать персональную обратную связь.
+                            Анализ ошибок и рекомендации преподавателей повышают качество усвоения материала.
+                            Гибкий график выполнения помогает совмещать учебу с работой.
+                        </p>
+                    </div>
+
+                    <!-- background-image: url("img/homework.jpg"); -->
+
+                </a>
+
+
+                <a class="about-card">
+                    <span class="about-number">03</span>
+                    <span class="about-more">ПОДРОБНЕЕ</span>
+
+                    <div class="about-content">
+                        <h3>Практическая работа</h3>
+
+                        <p>
+                            Обеспечивает применение теории в реальных сценариях.
+                            Интерактивные кейсы, симуляции и проекты формируют профессиональные навыки.
+                            Обратная связь экспертов помогает корректировать ошибки.
+                        </p>
+                    </div>
+
+                    <!-- background-image: url("img/practice.jpg"); -->
+
+                </a>
+
+
+                <a class="about-card">
+                    <span class="about-number">04</span>
+                    <span class="about-more">ПОДРОБНЕЕ</span>
+
+                    <div class="about-content">
+                        <h3>Тестирование</h3>
+
+                        <p>
+                            Позволяет проверять уровень усвоения материала и закреплять знания.
+                            Онлайн тесты делают учебный процесс более гибким и помогают отслеживать прогресс обучения.
+                        </p>
+                    </div>
+
+                    <!-- background-image: url("img/test.jpg"); -->
+
+                </a>
+
+                <!-- background-image: url("img/certificate.jpg"); -->
+
+                </a>
+
+
+                <a class="about-card">
+                    <span class="about-number">05</span>
+                    <span class="about-more">ПОДРОБНЕЕ</span>
+
+                    <div class="about-content">
+                        <h3>Комьюнити</h3>
+
+                        <p>
+                            Среда для обмена опытом и нетворкинга.
+                            Форумы, чаты и вебинары помогают находить партнёров для проектов и получать новые знания.
+                        </p>
+                    </div>
+
+                    <!-- background-image: url("img/community.jpg"); -->
+
+                </a>
+
+
+                <a class="about-card">
+                    <span class="about-number">06</span>
+                    <span class="about-more">ПОДРОБНЕЕ</span>
+
+                    <div class="about-content">
+                        <h3>Студенческая жизнь</h3>
+
+                        <p>
+                            Онлайн мероприятия, клубы по интересам и карьерные мастер-классы.
+                            Хакатоны, вебинары и проекты помогают развивать soft skills и профессиональные связи.
+                        </p>
+                    </div>
+
+                    <!-- background-image: url("img/student-life.jpg"); -->
+
+                </a>
+
+            </div>
+
+        </section>
+
+        <section class="diploma-section">
+
+            <h1 class="diploma-title">Ваш будущий диплом</h1>
+
+            <div class="diploma-grid">
+
+                <div class="diploma-card">
+
+                    <div class="diploma-img">
+                        <img src="img/srednie.avif" alt="">
+                    </div>
+
+                    <p>Государственный диплом о среднем профессиональном образовании</p>
+
+                </div>
+
+
+                <div class="diploma-card">
+
+                    <div class="diploma-img">
+                        <img src="img/vissee.avif" alt="">
+                    </div>
+
+                    <p>Государственный диплом о высшем образовании с присвоением степени бакалавра</p>
+
+                </div>
+
+
+                <div class="diploma-card">
+
+                    <div class="diploma-img">
+                        <img src="img/magistratyra.avif" alt="">
+                    </div>
+
+                    <p>Государственный диплом о высшем образовании с присвоением степени магистра</p>
+
+                </div>
+
+            </div>
+
+        </section>
+        <section id="advantages" class="advantages">
+
+            <h1 class="advantages-title">
+                ПРЕИМУЩЕСТВА ОБУЧЕНИЯ В МАП В ВОЛГОГРАДЕ<br>
+                ДИСТАНЦИОННО
+            </h1>
+
+            <div class="advantages-grid">
+
+                <div class="adv-card">
+
+                    <div class="adv-top">
+                        <span class="adv-number">1</span>
+                        <span class="adv-icon">✦</span>
+                    </div>
+
+                    <p>Международные стандарты обучения</p>
+
+                    <!-- <img class="adv-bg" src="img/advantage-bg.png" alt=""> -->
+
+                </div>
+
+
+                <div class="adv-card">
+
+                    <div class="adv-top">
+                        <span class="adv-number">2</span>
+                        <span class="adv-icon">✦</span>
+                    </div>
+
+                    <p>Возможность совмещать учебу и работу</p>
+
+                    <!-- <img class="adv-bg" src="img/advantage-bg.png" alt=""> -->
+
+                </div>
+
+
+                <div class="adv-card">
+
+                    <div class="adv-top">
+                        <span class="adv-number">3</span>
+                        <span class="adv-icon">✦</span>
+                    </div>
+
+                    <p>Практическая направленность</p>
+
+                    <!-- <img class="adv-bg" src="img/advantage-bg.png" alt=""> -->
+
+                </div>
+
+
+                <div class="adv-card">
+
+                    <div class="adv-top">
+                        <span class="adv-number">4</span>
+                        <span class="adv-icon">✦</span>
+                    </div>
+
+                    <p>Гибкие способы оплаты обучения</p>
+
+                    <!-- <img class="adv-bg" src="img/advantage-bg.png" alt=""> -->
+
+                </div>
+
+
+                <div class="adv-card">
+
+                    <div class="adv-top">
+                        <span class="adv-number">5</span>
+                        <span class="adv-icon">✦</span>
+                    </div>
+
+                    <p>Государственный диплом</p>
+
+                    <!-- <img class="adv-bg" src="img/advantage-bg.png" alt=""> -->
+
+                </div>
+
+
+                <div class="adv-card">
+
+                    <div class="adv-top">
+                        <span class="adv-number">6</span>
+                        <span class="adv-icon">✦</span>
+                    </div>
+
+                    <p>Современные образовательные технологии</p>
+
+                    <!-- <img class="adv-bg" src="img/advantage-bg.png" alt=""> -->
+
+                </div>
+                <div class="adv-card">
+
+                    <div class="adv-top">
+                        <span class="adv-number">7</span>
+                        <span class="adv-icon">✦</span>
+                    </div>
+
+                    <p>Ускоренное обучение — возможность сократить срок обучения до 3,3 года при наличии предыдущего
+                        образования.</p>
+
+                    <!-- <img class="adv-bg" src="img/advantage-bg.png" alt=""> -->
+
+                </div>
+
+
+                <div class="adv-card">
+
+                    <div class="adv-top">
+                        <span class="adv-number">8</span>
+                        <span class="adv-icon">✦</span>
+                    </div>
+
+                    <p>Сопровождение на всех этапах обучения — за каждым студентом закрепляется персональный куратор.
+                    </p>
+
+                    <!-- <img class="adv-bg" src="img/advantage-bg.png" alt=""> -->
+
+                </div>
+
+
+                <div class="adv-card">
+
+                    <div class="adv-top">
+                        <span class="adv-number">9</span>
+                        <span class="adv-icon">✦</span>
+                    </div>
+
+                    <p>Возможность прохождения вступительных испытаний дистанционно.</p>
+
+                    <!-- <img class="adv-bg" src="img/advantage-bg.png" alt=""> -->
+
+                </div>
+            </div>
+
+        </section>
+
+        <div class="diploma-modal">
+
+            <span class="diploma-close">✕</span>
+
+            <img class="diploma-modal-img" src="" alt="">
+
+        </div>
+
+
+        <section class="steps">
+
+            <h1 class="steps-title">Как поступить?</h1>
+
+            <div class="steps-grid">
+
+                <div class="step-card active">
+
+                    <span class="step-number">1</span>
+
+                    <span class="step-icon">🔖</span>
+
+                    <h3>Оставь заявку</h3>
+
+                    <p>Оставь заявку, и наши специалисты свяжутся с тобой!</p>
+
+                    <button class="step-btn">Оставить заявку</button>
+
+                </div>
+
+
+
+                <div class="step-card">
+
+                    <span class="step-number">2</span>
+
+                    <span class="step-icon">☑️</span>
+
+                    <h3>Предоставь документы<br>об образовании</h3>
+
+                    <p>Лично, либо на электронную почту:<br>
+                        volgmosap@mail.ru</p>
+
+                </div>
+
+
+
+                <div class="step-card">
+
+                    <span class="step-number">3</span>
+
+                    <span class="step-icon">📖</span>
+
+                    <h3>Пройди вступительные<br>испытания</h3>
+
+                    <p>Или предоставь результаты ЕГЭ</p>
+
+                </div>
+
+
+
+                <div class="step-card">
+
+                    <span class="step-number">4</span>
+
+                    <span class="step-icon">💳</span>
+
+                    <h3>Заключи договор<br>и оплати обучение</h3>
+
+                    <p>Заключение договора об обучении<br>
+                        в офисе или дистанционно</p>
+
+                </div>
+
+
+
+                <div class="step-card">
+
+                    <span class="step-number">5</span>
+
+                    <span class="step-icon">🎓</span>
+
+                    <h3>Получи статус студента<br>и доступ в личный кабинет</h3>
+
+                    <p>Все готово! Приступай к обучению и успехов!</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="faq">
+            <div class="_container">
+                <h2 class="faq__header-title">Часто задаваемые вопросы</h2>
+
+                <div class="faq__grid">
+                    <div class="faq-card">
+                        <div class="faq-card__content">
+                            <h3 class="faq-card__question">Сколько стоит обучение в Академии?</h3>
+                            <div class="faq-card__answer">
+                                <p>Вы можете уточнить актуальные цены на интересующую программу в приемной комиссии по
+                                    тел: <a href="tel:+79370881197">8-937-088-11-97</a></p>
+                            </div>
+                        </div>
+                        <button class="faq-card__toggle">
+                            <span class="icon-plus"></span>
+                        </button>
+                    </div>
+
+                    <div class="faq-card">
+                        <div class="faq-card__content">
+                            <h3 class="faq-card__question">Какие документы нужны для подачи заявления?</h3>
+                            <div class="faq-card__answer">
+                                <ul>
+                                    <li>Документ об образовании (аттестат, диплом)</li>
+                                    <li>Результаты ЕГЭ / внутренние испытания</li>
+                                    <li>Паспорт и СНИЛС</li>
+                                    <li>Фотографии установленного образца</li>
+                                    <li>Заявление о приеме</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="faq-card__toggle">
+                            <span class="icon-plus"></span>
+                        </button>
+                    </div>
+
+                    <div class="faq-card">
+                        <div class="faq-card__content">
+                            <h3 class="faq-card__question">Какой диплом я получу после окончания Академии?</h3>
+                            <div class="faq-card__answer">
+                                <p>Выпускники получают государственный диплом о высшем образовании (бакалавриат /
+                                    магистратура) или среднем профессиональном образовании (колледж).</p>
+                            </div>
+                        </div>
+                        <button class="faq-card__toggle">
+                            <span class="icon-plus"></span>
+                        </button>
+                    </div>
+
+                    <div class="faq-card">
+                        <div class="faq-card__content">
+                            <h3 class="faq-card__question">Можно ли совмещать учебу в Академии с работой?</h3>
+                            <div class="faq-card__answer">
+                                <p>Наши программы очно-заочной и заочной форм специально разработаны с учётом гибкого
+                                    графика, чтобы вы могли успешно совмещать обучение с работой.</p>
+                            </div>
+                        </div>
+                        <button class="faq-card__toggle">
+                            <span class="icon-plus"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contacts-modern">
+            <div id="contacts" class="_container contacts-modern__container">
+                <div class="contacts-modern__info">
+                    <h2 class="contacts-modern__title">Наши контакты</h2>
+
+                    <div class="contacts-modern__item">
+                        <span class="contacts-modern__label">Телефон:</span>
+                        <a href="tel:+79370881197" class="contacts-modern__value">+7 (937) 088-11-97</a>
+                    </div>
+
+                    <div class="contacts-modern__item">
+                        <span class="contacts-modern__label">Email:</span>
+                        <a href="mailto:volgmosap@mail.ru" class="contacts-modern__value">volgmosap@mail.ru</a>
+                    </div>
+
+                    <hr class="contacts-modern__divider">
+
+                    <div class="contacts-modern__item">
+                        <span class="contacts-modern__label">График работы комиссии:</span>
+                        <p class="contacts-modern__text">Пн. – Пт. 09:00 – 17:00</p>
+                    </div>
+
+                    <div class="contacts-modern__item">
+                        <span class="contacts-modern__label">Консультация (тел):</span>
+                        <p class="contacts-modern__text">С 09:00 до 20:00</p>
+                    </div>
+
+                    <hr class="contacts-modern__divider">
+
+                    <div class="contacts-modern__item">
+                        <span class="contacts-modern__label">Адрес:</span>
+                        <p class="contacts-modern__text">Скрыт</p>
+                    </div>
+                </div>
+
+                <div class="contacts-modern__form-wrapper">
+                    <div class="form-card">
+                        <h3 class="form-card__title">Приемная комиссия</h3>
+                        <p class="form-card__subtitle">Оставьте заявку и получите консультацию</p>
+
+                        <form action="#" class="main-form">
+                            <div class="form-group">
+                                <input type="text" placeholder="Ваше имя" required class="form-input">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Эл. почта" required class="form-input">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" placeholder="Телефон" required class="form-input">
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Ваше сообщение..." class="form-textarea"></textarea>
+                            </div>
+
+                            <label class="checkbox-label">
+                                <input type="checkbox" required>
+                                <span class="checkbox-text">Согласен с политикой конфиденциальности</span>
+                            </label>
+
+                            <button type="submit" class="priemnaia-komisia submit-btn">Отправить заявку</button>
+                        </form>
+                        <p class="form-notice">Прием заявок осуществляется круглосуточно</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ================= FULL FOOTER ================= -->
+    <footer class="footer">
+        <div class="footer__container">
+
+            <div class="footer__top">
+
+                <!-- Лого и описание -->
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <img src="img/logobykvi.png" alt="Логотип">
+                    </div>
+
+                    <p class="footer__description">
+                        Московская академия предпринимательства —
+                        высшее образование с государственной аккредитацией.
+                    </p>
+                </div>
+
+                <!-- Навигация -->
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Абитуриентам</h4>
+                    <ul class="footer__menu">
+                        <li><a class="footer__link" href="#programs">Программы</a></li>
+                        <li><a class="footer__link" href="#steps">Как поступить</a></li>
+                        <li><a class="footer__link" href="#advantages">Преимущества</a></li>
+                        <li><a class="footer__link" href="#forms">Оставить заявку</a></li>
+                    </ul>
+                </div>
+
+                <!-- Документы -->
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Документы</h4>
+                    <ul class="footer__menu">
+                        <li><a class="footer__link" href="#">Лицензия</a></li>
+                        <li><a class="footer__link" href="#">Аккредитация</a></li>
+                        <li><a class="footer__link" href="#">Политика конфиденциальности</a></li>
+                    </ul>
+                </div>
+
+                <!-- Контакты -->
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Контакты</h4>
+
+                    <div class="footer__contacts">
+                        <a href="tel:+74950000000" class="footer__contact">
+                            +7 (495) 000-00-00
+                        </a>
+
+                        <a href="mailto:info@mail.ru" class="footer__contact">
+                            info@mail.ru
+                        </a>
+
+                        <p class="footer__address">
+                            г. Москва, ул. Примерная, д. 10
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Низ -->
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    © 2026 Московская академия предпринимательства. Все права защищены.
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
